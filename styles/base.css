@@ -8,14 +8,16 @@ body {
     font-weight: 400;
     margin: 0;
 }
+header {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
 
 header span {
     display: block;
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    background-color: var(--main-bg-color);
-    color: var(--main-color);
     margin: 0;
     padding: 15px;
 }
@@ -50,6 +52,11 @@ nav a {
     color: #fff;
 }
 
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -81,6 +88,7 @@ section.card {
 
 .myself img {
     flex: 1;
+    height: 200px;
 }
 
 .country {
@@ -92,6 +100,9 @@ section.card {
     flex: 3;
 }
 
+img {
+    width: 160px;
+}
 .country img {
     flex: 1;
 }
@@ -117,11 +128,32 @@ footer {
     font-weight: bold;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 90px;
     background-color: var(--main-bg-color);
     color: var(--main-color)
 }
 
 .highlight {
     color: #d86e6e;
+}
+
+.resources {
+    list-style:circle;
+}
+
+.resources a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.resources a:hover {
+    font-weight: bold;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
