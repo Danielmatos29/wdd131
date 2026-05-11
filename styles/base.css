@@ -1,0 +1,127 @@
+:root {
+    --main-bg-color: #f3da94;
+    --main-color: #364d23;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+header span {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    margin: 0;
+    padding: 15px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0;
+}
+
+.links-me {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #000;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 600px 300px;
+    gap: 1em;
+}
+
+.card {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+section.card {
+    margin: 0;
+}
+.myself {
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+
+.myself figcaption {
+    flex: 3;
+}
+
+.myself img {
+    flex: 1;
+}
+
+.country {
+    display: flex;
+    gap: 50px;
+}
+
+.country figcaption {
+    flex: 3;
+}
+
+.country img {
+    flex: 1;
+}
+.card h2 {
+    text-align: center;
+    margin: auto 0;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.card nav a {
+    color: var(--main-color);
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color)
+}
+
+.highlight {
+    color: #d86e6e;
+}
