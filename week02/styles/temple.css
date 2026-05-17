@@ -70,7 +70,6 @@ main h1 {
 
 footer {
     padding: 0.2rem;
-    display: block;
     text-align: center;
     background-color: var(--main-color);
     color: var(--text-color);
@@ -115,4 +114,5 @@ footer {
 	.navigation a {
         display: block;
 	}
+
 }
