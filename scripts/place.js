@@ -12,8 +12,8 @@ last_modified.innerHTML = `Last modified: <span class="highlight">${new Intl.Dat
 	}
 ).format(today)}</span>`;
 
-const temperature = 40;
-const windSpeed = 10;
+const temperature = 26;
+const windSpeed = 6;
 
 // Write the calculation function
 function calculateWindChill(t, v) {
