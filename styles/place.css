@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e72f2f;
+    --primary-color: #AA1313;
     --secondary-color: #2c90ee;
 }
 
@@ -95,15 +95,6 @@ h1 {
   
   background-image: url('../images/weather-icon.svg'); 
   background-size: contain; 
-}
-
-footer, 
-footer p, 
-footer span, 
-footer #currentyear, 
-footer #lastModified, 
-footer .highlight {
-  color: #ffffff !important;
 }
 
 @media (max-width: 750px) {
