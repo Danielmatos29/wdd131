@@ -97,9 +97,13 @@ h1 {
   background-size: contain; 
 }
 
+footer, 
+footer p, 
 footer span, 
+footer #currentyear, 
+footer #lastModified, 
 footer .highlight {
-  color: #ffffff; 
+  color: #ffffff !important;
 }
 
 @media (max-width: 750px) {
