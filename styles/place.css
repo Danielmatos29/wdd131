@@ -1,0 +1,122 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+header, 
+footer {
+    max-width: 75rem;
+    max-height: 40rem;
+    margin: 0 auto;
+    padding: 1%;
+    color: #ffff;
+    background-color: #fa4444;
+}
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 0 0;
+    background-color: #2c90ee;
+}
+
+h1 {
+    color: #ffff;
+    text-align: center;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+.image-wrapper {
+  position: relative; /* Essential: creates a coordinate system for the overlay */
+}
+
+.bold-text{
+    font-weight: bolder;
+}
+
+.card-header, 
+.weather-header{
+    color: #ffff;
+    padding-left: 8%;
+}
+
+.data-card {
+    border: 0.2rem solid rgb(0 0 0);
+    text-align: left;
+    background-color: #2c90ee;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+.weather-card {
+    border: 0.2rem solid rgb(0 0 0);
+    text-align: left;
+    background-color: #2c90ee;
+    position: absolute;
+    top: 48%;
+    left: 73%;
+}
+
+.data-table,
+.weather-table {
+    padding: 0.8rem;
+    background-color: rgb(255, 255, 255);
+}
+.weather-icon {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+}
+footer {
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-header, 
+    .weather-header{
+        padding-left: 2.5%;
+        color: #000000;
+    }
+
+    .data-card, .weather-card {
+        border: 0;
+        position: static;
+        background-color: #ffffff;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+
+    td:first-child {
+        font-weight: bold;
+        padding: 0.2rem 0;
+    }
+    .weather-card {
+        width: max-content;
+        position: relative;
+    }
+
+    .weather-icon {
+        position: absolute;
+        left: 45%;
+    }
+
+}

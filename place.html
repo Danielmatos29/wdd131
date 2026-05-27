@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Matos Romero">
+    <meta name="description" content="Discover, explore, and find useful information about Dominican Republic">
+    <link rel="stylesheet" href="styles/place.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
+    <script src="scripts/place.js" defer></script>
+    <title>Dominican Republic</title>
+</head>
+<body>
+    <header>
+        <h1>Dominican Republic</h1>
+    </header>
+    <main>
+        <div class="image-wrapper">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 750px)">
+                <img src="images/hero-small.jpg" alt="Fauna in Dominican Republic" class="responsive">
+            </picture>
+            <div class="data-card">
+                <h2 class="card-header">Data</h2>
+                
+                <table class="data-table">
+                    <tr> <td class="bold-text">Area:</td>         <td>48,671 sq km</td> </tr>
+                    <tr> <td class="bold-text">Population:</td>   <td>~11.5 million</td> </tr>
+                    <tr> <td class="bold-text">Capital:</td>      <td>Santo Domingo</td> </tr>
+                    <tr> <td class="bold-text">Languages:</td>    <td>Spanish</td> </tr>
+                    <tr> <td class="bold-text">Currency:</td>    <td>Dominican Peso (DOP)</td> </tr>
+                    <tr> <td class="bold-text">Time Zone:</td>    <td>UTC-04:00</td> </tr>
+                    <tr> <td class="bold-text">Calling Code:</td>    <td>+1-809, +1-829, +1-849</td> </tr>
+                    <tr> <td class="bold-text">Internet TLD:</td>    <td>.do</td> </tr>
+                </table>
+            </div>
+
+            <div class="weather-card">
+                <h2 class="weather-header">Weather</h2>
+                <img src="images/cloudy_icon.png" alt="weather icon" class="weather-icon">
+
+                <table class="weather-table">
+                    <tr> <td class="bold-text">Temperature:</td>         <td>24 °C</td> </tr>
+                    <tr> <td class="bold-text">Conditions:</td>   <td>Partly cloudy</td> </tr>
+                    <tr> <td class="bold-text">Wind:</td>      <td> 6 km/h</td> </tr>
+                    <tr> <td class="bold-text">Wind Chill:</td>    <td id="windchill"></td> </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Matos, Dominican Republic.
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
