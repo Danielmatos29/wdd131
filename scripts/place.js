@@ -12,7 +12,7 @@ last_modified.innerHTML = `Last modified: <span class="highlight">${new Intl.Dat
 	}
 ).format(today)}</span>`;
 
-const temperature = 26;
+const temperature = 24;
 const windSpeed = 6;
 
 // Write the calculation function
