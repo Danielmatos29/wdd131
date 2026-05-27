@@ -21,12 +21,12 @@
     <main>
         <div class="image-wrapper">
             <picture>
-                <source srcset="images/hero-large.jpg" media="(min-width: 750px)">
-                <img src="images/hero-small.jpg" alt="Fauna in Dominican Republic" class="responsive">
+                <source srcset="images/hero-large.webp" media="(min-width: 750px)" fetchpriority="high">
+                <img src="images/hero-small.webp" alt="Fauna in Dominican Republic" class="responsive" fetchpriority="high">
             </picture>
             <div class="data-card">
-                <h2 class="card-header">Data</h2>
-                
+                <h2 class="card-header">Data</h2> 
+
                 <table class="data-table">
                     <tr> <td class="bold-text">Area:</td>         <td>48,671 sq km</td> </tr>
                     <tr> <td class="bold-text">Population:</td>   <td>~11.5 million</td> </tr>
@@ -41,8 +41,7 @@
 
             <div class="weather-card">
                 <h2 class="weather-header">Weather</h2>
-                <img src="images/cloudy_icon.png" alt="weather icon" class="weather-icon">
-
+    
                 <table class="weather-table">
                     <tr> <td class="bold-text">Temperature:</td>         <td>24 °C</td> </tr>
                     <tr> <td class="bold-text">Conditions:</td>   <td>Partly cloudy</td> </tr>

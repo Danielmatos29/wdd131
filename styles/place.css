@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #fa4444;
+    --secondary-color: #2c90ee;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -11,7 +16,7 @@ footer {
     margin: 0 auto;
     padding: 1%;
     color: #ffff;
-    background-color: #fa4444;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -24,7 +29,7 @@ main {
     width: 100%;
     height: auto;
     padding: 1rem 0 0 0;
-    background-color: #2c90ee;
+    background-color: var(--secondary-color);
 }
 
 h1 {
@@ -52,7 +57,7 @@ h1 {
 .data-card {
     border: 0.2rem solid rgb(0 0 0);
     text-align: left;
-    background-color: #2c90ee;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 10%;
     left: 8%;
@@ -61,7 +66,7 @@ h1 {
 .weather-card {
     border: 0.2rem solid rgb(0 0 0);
     text-align: left;
-    background-color: #2c90ee;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 48%;
     left: 73%;
@@ -72,13 +77,24 @@ h1 {
     padding: 0.8rem;
     background-color: rgb(255, 255, 255);
 }
-.weather-icon {
-    position: absolute;
-    top: 5%;
-    right: 10%;
-    width: 40px;
-    height: 40px;
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;          
 }
+
+.weather-header::after {
+  content: "";         /* Tells the browser to render the pseudo-element */
+  display: inline-block;
+
+  width: 50px;         
+  height: 50px;        
+  
+  background-image: url('../images/weather-icon.svg'); 
+  background-size: contain; 
+}
+
 footer {
     text-align: center;
 }
@@ -113,10 +129,4 @@ footer {
         width: max-content;
         position: relative;
     }
-
-    .weather-icon {
-        position: absolute;
-        left: 45%;
-    }
-
 }
