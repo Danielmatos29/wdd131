@@ -1,0 +1,118 @@
+:root {
+    --main-color: #b4f09c;
+    --text-color: #000000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 1.2rem;
+    margin: 0;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+header p {
+    margin: 0; 
+    padding: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+	max-width: 700px;
+	margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #f8ff8f;
+    font-weight: bold;
+}
+
+.open a {
+	display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h1 {
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+}
+
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 1rem;
+}
+
+footer {
+    padding: 0.2rem;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+@media (min-width: 37.5em) {
+    header {
+        display: flex;
+    }
+
+	#menu {
+		display: none;
+	}
+
+    nav ul {
+        gap: 2.5rem;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+	.navigation a {
+        display: block;
+	}
+
+}

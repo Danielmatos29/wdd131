@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Matos Romero">
+    <meta name="description" content="Discover, explore, and find beautiful historic temples around the world.">
+
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <title>Temple Album</title>
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Open main menu"></button>
+        <p>Temple Album</p>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Home" id="home">Home</a></li>
+                    <li><a href="#" title="Old" id="old">Old</a></li>
+                    <li><a href="#" title="New" id="new">New</a></li>
+                    <li><a href="#" title="Large" id="large">Large</a></li>
+                    <li><a href="#" title="Small" id="small">Small</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="container" id="temples-container">
+            
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Matos, Dominican Republic.
+        </p>
+         <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
