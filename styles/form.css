@@ -68,4 +68,9 @@ input[type="text"]{
     height: 2.5rem;
 }
 
-
+footer {
+    color: #ffff;
+    background-color: var(--main-bg-color);
+    width: 30.8%;
+    text-align: center;
+}
