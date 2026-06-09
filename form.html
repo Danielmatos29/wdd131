@@ -20,71 +20,83 @@
     <main>
         <form action="review.html" method="get">
             <!--Product Selection-->
-            <h2>Product Selection</h2>
-            <select name="product-select" id="product" required>
-                <option value="" selected disabled>Choose a product...</option>
-            </select>
+            <label for="select">
+                <h2>Product Selection</h2>
+                <select name="product-select" id="product" required>
+                    <option value="" selected disabled>Choose a product...</option>
+                </select>
+            </label>
 
             <!--Overall Rating-->
-            <h2>Overall Rating</h2>
-            <label for="one_star" class="stars">⭐
-                <input type="radio" id="one_star" name="stars" required>
-            </label>
+            <label for="radio">
+                <h2>Overall Rating</h2>
+                <label for="one_star" class="stars">⭐
+                    <input type="radio" id="one_star" name="stars" required>
+                </label>
 
-            <label for="two_stars" class="stars">⭐⭐
-                <input type="radio" id="two_stars" name="stars" required>
-            </label>
+                <label for="two_stars" class="stars">⭐⭐
+                    <input type="radio" id="two_stars" name="stars" required>
+                </label>
 
-            <label for="three_stars" class="stars">⭐⭐⭐
-                <input type="radio" id="three_stars" name="stars" required>
-            </label>
+                <label for="three_stars" class="stars">⭐⭐⭐
+                    <input type="radio" id="three_stars" name="stars" required>
+                </label>
 
-            <label for="four_stars" class="stars">⭐⭐⭐⭐
-                <input type="radio" id="four_stars" name="stars" required>
-            </label>
+                <label for="four_stars" class="stars">⭐⭐⭐⭐
+                    <input type="radio" id="four_stars" name="stars" required>
+                </label>
 
-            <label for="five_stars" class="stars">⭐⭐⭐⭐⭐
-                <input type="radio" id="five_stars" name="stars" required>
+                <label for="five_stars" class="stars">⭐⭐⭐⭐⭐
+                    <input type="radio" id="five_stars" name="stars" required>
+                </label>
             </label>
             
             <!--Date Input-->
-            <h2>Date of Installation</h2>
-            <input type="date" id="date_of_installation" name="date_of_installation" required>
-
+            <label for="date">
+                <h2>Date of Installation</h2>
+                <input type="date" id="date_of_installation" name="date_of_installation" required>
+            </label>
             <!--Useful Features-->
-            <h2>Which features did you find useful in the product? 
+            <label for="checkbox" class="title_label">
+                <h2>Which features did you find useful in the product? 
                 <br>(Check all that apply)</h2>
+                <label for="durability" class="features">
+                    <input type="checkbox" id="durability" name="Features" value="durability">
+                    Durability
+                </label>
 
-            <label for="durability" class="features">
-                <input type="checkbox" id="durability" name="Features" value="durability">
-                Durability
-            </label>
+                <label for="ease" class="features">
+                    <input type="checkbox" id="ease" name="Features" value="ease">
+                    Ease of Use
+                </label>
 
-            <label for="ease" class="features">
-                <input type="checkbox" id="ease" name="Features" value="ease">
-                Ease of Use
-            </label>
+                <label for="performance" class="features">
+                    <input type="checkbox" id="performance" name="Features" value="performance">
+                    Performance
+                </label>
 
-            <label for="performance" class="features">
-                <input type="checkbox" id="performance" name="Features" value="performance">
-                Performance
-            </label>
-
-            <label for="design" class="features">
-                <input type="checkbox" id="design" name="Features" value="design">
-                Design
+                <label for="design" class="features">
+                    <input type="checkbox" id="design" name="Features" value="design">
+                    Design
+                </label>
             </label>
 
             <!--Written Review-->
-            <h2>Written Review (optional)</h2>
-            <textarea name="review" id="review" rows="5" class="review" ></textarea>
+            <label for="textarea">
+                <h2>Written Review(option)</h2>
+                <textarea name="review" id="review" rows="5" class="review" ></textarea>
+            </label>
 
             <!--User Name-->
-            <h2>Your Name</h2>
-            <input type="text" name="user" id="username"><br>
+            <label for="textarea" class="title_label">
+                <h2>Your Name</h2>
+                <input type="text" name="user" id="username"><br>
+            </label>
 
             <!--Submission-->
-            <input type="submit" value="Post My Review" class="button">
+            <label for="submit" class="title_label">
+                <input type="submit" value="Post My Review" class="button">
+            </label>
         </form>
     </main>
     <footer>
