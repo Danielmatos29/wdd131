@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Matos">
+    <meta name="description" content="product review forum">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <!--Product Selection-->
+            <h2>Product Selection</h2>
+            <select name="product-select" id="product" required>
+                <option value="" selected disabled>Choose a product...</option>
+            </select>
+
+            <!--Overall Rating-->
+            <h2>Overall Rating</h2>
+            <label for="one_star" class="stars">⭐
+                <input type="radio" id="one_star" name="stars" required>
+            </label>
+
+            <label for="two_stars" class="stars">⭐⭐
+                <input type="radio" id="two_stars" name="stars" required>
+            </label>
+
+            <label for="three_stars" class="stars">⭐⭐⭐
+                <input type="radio" id="three_stars" name="stars" required>
+            </label>
+
+            <label for="four_stars" class="stars">⭐⭐⭐⭐
+                <input type="radio" id="four_stars" name="stars" required>
+            </label>
+
+            <label for="five_stars" class="stars">⭐⭐⭐⭐⭐
+                <input type="radio" id="five_stars" name="stars" required>
+            </label>
+            
+            <!--Date Input-->
+            <h2>Date of Installation</h2>
+            <input type="date" id="date_of_installation" name="date_of_installation" required>
+
+            <!--Useful Features-->
+            <h2>Which features did you find useful in the product? 
+                <br>(Check all that apply)</h2>
+
+            <label for="durability" class="features">
+                <input type="checkbox" id="durability" name="Features" value="durability">
+                Durability
+            </label>
+
+            <label for="ease" class="features">
+                <input type="checkbox" id="ease" name="Features" value="ease">
+                Ease of Use
+            </label>
+
+            <label for="performance" class="features">
+                <input type="checkbox" id="performance" name="Features" value="performance">
+                Performance
+            </label>
+
+            <label for="design" class="features">
+                <input type="checkbox" id="design" name="Features" value="design">
+                Design
+            </label>
+
+            <!--Written Review-->
+            <h2>Written Review (optional)</h2>
+            <textarea name="review" id="review" rows="5" class="review" ></textarea>
+
+            <!--User Name-->
+            <h2>Your Name</h2>
+            <input type="text" name="user" id="username"><br>
+
+            <!--Submission-->
+            <input type="submit" value="Post My Review" class="button">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
