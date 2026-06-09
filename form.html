@@ -20,8 +20,8 @@
     <main>
         <form action="review.html" method="get">
             <!--Product Selection-->
-            <label for="select">
-                <h2>Product Selection</h2>
+            <label for="product" class="title_label">
+                Product Selection
                 <select name="product-select" id="product" required>
                     <option value="" selected disabled>Select a Product ...</option>
                 </select>
@@ -50,14 +50,13 @@
             </label>
 
             <!--Date Input-->
-            <label for="date_of_installation">
-                <h2>Date of Installation</h2>
+            <label for="date_of_installation" class="title_label">
+                Date of Installation
                 <input type="date" id="date_of_installation" name="date_of_installation" required>
             </label>
 
             <!--Useful Features-->
-            <h2>Which features did you find useful in the product? 
-            <br>(Check all that apply)</h2>
+            <h2>Which features did you find useful in the product?<br>(Check all that apply)</h2>
             <label for="durability" class="features">
                 <input type="checkbox" id="durability" name="Features" value="durability">
                 Durability
@@ -79,14 +78,14 @@
             </label>
 
             <!--Written Review-->
-            <label for="textarea">
-                <h2>Written Review(option)</h2>
+            <label for="review" class="title_label">
+                Written Review(option)
                 <textarea name="review" id="review" rows="5" class="review" ></textarea>
             </label>
 
             <!--User Name-->
             <label for="textarea" class="title_label">
-                <h2>Your Name</h2>
+                Your Name
                 <input type="text" name="user" id="username"><br>
             </label>
 
