@@ -71,6 +71,15 @@ input[type="text"]{
 footer {
     color: #ffff;
     background-color: var(--main-bg-color);
-    width: 30.8%;
-    text-align: center;
+    width: 580px;
+}
+
+@media (max-width: 492px){
+    .stars {
+        display: inline-block;
+        flex-direction: column;
+        gap: 4px;
+        padding-right: 1rem;
+        padding-bottom: .6rem;
+    }
 }

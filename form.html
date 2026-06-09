@@ -28,57 +28,54 @@
             </label>
 
             <!--Overall Rating-->
-            <label for="radio">
-                <h2>Overall Rating</h2>
-                <label for="one_star" class="stars">⭐
-                    <input type="radio" id="one_star" name="stars" required>
-                </label>
-
-                <label for="two_stars" class="stars">⭐⭐
-                    <input type="radio" id="two_stars" name="stars" required>
-                </label>
-
-                <label for="three_stars" class="stars">⭐⭐⭐
-                    <input type="radio" id="three_stars" name="stars" required>
-                </label>
-
-                <label for="four_stars" class="stars">⭐⭐⭐⭐
-                    <input type="radio" id="four_stars" name="stars" required>
-                </label>
-
-                <label for="five_stars" class="stars">⭐⭐⭐⭐⭐
-                    <input type="radio" id="five_stars" name="stars" required>
-                </label>
+            <h2>Overall Rating</h2>
+            <label for="one_star" class="stars">⭐
+                <input type="radio" id="one_star" name="stars" value="1" required>
             </label>
-            
+
+            <label for="two_stars" class="stars">⭐⭐
+                 <input type="radio" id="two_stars" name="stars" value="2" required>
+              </label>
+
+            <label for="three_stars" class="stars">⭐⭐⭐
+                <input type="radio" id="three_stars" name="stars" value="3" required>
+            </label>
+
+            <label for="four_stars" class="stars">⭐⭐⭐⭐
+                <input type="radio" id="four_stars" name="stars" value="4" required>
+            </label>
+
+            <label for="five_stars" class="stars">⭐⭐⭐⭐⭐
+                <input type="radio" id="five_stars" name="stars" value="5" required>
+            </label>
+
             <!--Date Input-->
-            <label for="date">
+            <label for="date_of_installation">
                 <h2>Date of Installation</h2>
                 <input type="date" id="date_of_installation" name="date_of_installation" required>
             </label>
+
             <!--Useful Features-->
-            <label for="checkbox" class="title_label">
-                <h2>Which features did you find useful in the product? 
-                <br>(Check all that apply)</h2>
-                <label for="durability" class="features">
-                    <input type="checkbox" id="durability" name="Features" value="durability">
-                    Durability
-                </label>
+            <h2>Which features did you find useful in the product? 
+            <br>(Check all that apply)</h2>
+            <label for="durability" class="features">
+                <input type="checkbox" id="durability" name="Features" value="durability">
+                Durability
+            </label>
 
-                <label for="ease" class="features">
-                    <input type="checkbox" id="ease" name="Features" value="ease">
-                    Ease of Use
-                </label>
+            <label for="ease" class="features">
+                <input type="checkbox" id="ease" name="Features" value="ease">
+                Ease of Use
+            </label>
 
-                <label for="performance" class="features">
-                    <input type="checkbox" id="performance" name="Features" value="performance">
-                    Performance
-                </label>
+            <label for="performance" class="features">
+                <input type="checkbox" id="performance" name="Features" value="performance">
+                Performance
+            </label>
 
-                <label for="design" class="features">
-                    <input type="checkbox" id="design" name="Features" value="design">
-                    Design
-                </label>
+            <label for="design" class="features">
+                <input type="checkbox" id="design" name="Features" value="design">
+                Design
             </label>
 
             <!--Written Review-->
@@ -94,9 +91,7 @@
             </label>
 
             <!--Submission-->
-            <label for="submit" class="title_label">
-                <input type="submit" value="Post My Review" class="button">
-            </label>
+            <input type="submit" value="Post My Review" class="button">
         </form>
     </main>
     <footer>
