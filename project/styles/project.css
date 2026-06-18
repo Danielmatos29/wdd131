@@ -261,4 +261,8 @@ button {
     ul {
         display: block;
     }
+
+	.pirates-container {
+    	display: block;
+	}
 }
