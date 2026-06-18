@@ -10,52 +10,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="scripts/project.js" defer></script>
     <title>The Pirate Ledge</title>
 </head>
 <body>
     <header>
         <h1>The Pirate Ledge</h1>
+        <button id="menu" aria-label="Open main menu"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="project.html">History</a></li>
                 <li><a href="pirates.html">Famous Pirates</a></li>
-                <li><a href="">Myths</a></li>
-                <li><a href="">Ships & Weapons</a></li>
+                <li><a href="myths.html">Myths</a></li>
+                <li><a href="ships&weapons.html">Ships & Weapons</a></li>
+                <li><a href="share.html">Share</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="Container">
-            <div class="overlay-text">
-            </div>
-            <img src="images/hero-image.jpeg" alt="Introduction to Pirates History" class="hero-image">
-            <div>
-                <img src="images/Captain Kidd.jpg" alt="Captain Kidd">
-                <img src="images/pirate-ship.jpg" alt="Ships of Pirates">
-            </div>
+            <img src="images/hero-image.jpeg" alt="Introduction to Pirates History" class="hero_image" class="mi-imagen" loading="lazy">
         </div>
-        <section class="History">
             <h2>Origin of Pirates</h2>
             <p>
                 Piracy is one of the oldest professions in human history, nearly as old as seafaring itself. As soon as humans began transporting valuable goods across water, others found it profitable to take those goods by force. The earliest recorded acts of piracy date back to the 14th century BC, when the Sea Peoples — a mysterious confederation of maritime raiders — terrorized the Eastern Mediterranean, attacking ships and coastal settlements from Egypt to Greece.<br><br>
                 In ancient Greece, piracy was so common that it was barely considered a crime. Thucydides, the great Greek historian, wrote that early Greeks and barbarians alike turned to piracy without any sense of disgrace. Homer's Odyssey features characters who openly admit to raiding foreign coasts for profit. The line between a merchant, a raider, and a pirate was blurry at best.<br><br>
-                <img src="images/greece-pirates.jpg" alt="Representation of Greece's pirates" class="origin-imgs"></img><br>
+                <img src="images/greece-pirates.jpg" alt="Representation of Greece's pirates" class="origin-imgs" loading="lazy"></img><br>
                 The Roman Empire took piracy far more seriously. Pirates in the Mediterranean grew so powerful by 67 BC that they disrupted Roman grain supplies — a crisis severe enough that the Senate granted Pompey the Great extraordinary powers to eliminate the threat. Pompey's three-month campaign cleared the Mediterranean of piracy through a combination of military force and a surprising offer: any pirate who surrendered would receive land and a chance at a peaceful life.
             </p>
             <h3>The Mediterranean & Viking Age (800–1100 AD)</h3>
             <p>
                 After the fall of the Roman Empire, Mediterranean piracy surged again. The Byzantine Empire and Arab caliphates both struggled to control the sea lanes. Arab corsairs operated extensively across the Mediterranean, while the Byzantine navy fought to protect its trade routes.<br><br>
-                <img src="images/pirates-of-mediterranean.jpg" alt="Mediterranean Piracy Representation" class="origin-imgs"></img><br>
+                <img src="images/pirates-of-mediterranean.jpg" alt="Mediterranean Piracy Representation" class="origin-imgs" loading="lazy"></img><br>
                 Meanwhile, in Northern Europe, the Vikings — often romanticized as purely land-based raiders — were also highly effective pirates. From roughly 793 to 1100 AD, Norse sea-raiders attacked coastal towns across Britain, Ireland, France, and even as far south as Spain and Sicily. Their longships, capable of navigating both open seas and shallow rivers, gave them terrifying mobility. The sack of the monastery at Lindisfarne in 793 AD is traditionally considered the start of the Viking Age and stands as one of the most notorious pirate raids in history.<br><br>
-                <img src="images/vikings.webp" alt="Vikings Representation" class="origin-imgs"></img><br>
+                <img src="images/vikings.webp" alt="Vikings Representation" class="origin-imgs" loading="lazy"></img><br>
                 Francis Drake is perhaps the most famous example. To the English, he was a hero and eventual knight. To the Spanish, he was El Draque — a pirate and criminal. His 1577–1580 circumnavigation of the globe included a devastating raid on Spanish Pacific ports, and his 1585–1586 expedition raided Spanish colonies throughout the Caribbean. Queen Elizabeth I personally profited from his expeditions.
             </p>
             <h3>The Age of Exploration & Caribbean Piracy (1500s–1600s)</h3>
             <p>
-                <img src="images/caribbean-piracy.jpg" alt="The difficult times in piracy exploration" class="origin-imgs"></img><br>
+                <img src="images/caribbean-piracy.jpg" alt="The difficult times in piracy exploration" class="origin-imgs" loading="lazy"></img><br>
                 European colonization of the Americas created enormous wealth flowing across the Atlantic — and enormous opportunity for those willing to take it. Spanish treasure fleets (flotas) carried gold and silver from the New World back to Spain, sailing predictable routes that made them easy targets.<br><br>
                 Two terms are important here: pirate and privateer. A pirate operated entirely outside the law, attacking ships of any nation. A privateer, by contrast, held a government-issued license called a Letter of Marque that authorized them to attack the ships of enemy nations. In practice, the line was often crossed. Many privateers turned to outright piracy when war ended and their licenses expired.<br><br>
-                <img src="images/francis-drake.jpg" alt="An old portrait of Francis Drake" class="portrait-imgs"></img><br>
+                <img src="images/francis-drake.jpg" alt="An old portrait of Francis Drake" class="portrait-imgs" loading="lazy"></img><br>
                 Francis Drake is perhaps the most famous example. To the English, he was a hero and eventual knight. To the Spanish, he was El Draque — a pirate and criminal. His 1577–1580 circumnavigation of the globe included a devastating raid on Spanish Pacific ports, and his 1585–1586 expedition raided Spanish colonies throughout the Caribbean. Queen Elizabeth I personally profited from his expeditions.
             </p>
             <h3>The Golden Age of Piracy (1620–1730)</h3>
@@ -63,20 +60,26 @@
                 The period roughly spanning 1620 to 1730 is considered the Golden Age of Piracy — the era that gave rise to virtually every pirate legend, character, and image we associate with piracy today. This era is further divided by historians into two main phases.
             </p>
             <h4>First Wave (1620s–1680s): The Buccaneers</h4>
-            <img src="images/buccaneers.jpg" alt="Buccaneers representation of their pirate legacy" class="origin-imgs"></img><br>
+            <img src="images/buccaneers.jpg" alt="Buccaneers representation of their pirate legacy" class="origin-imgs" loading="lazy"></img><br>
             <p>
                 The first wave centered on the Caribbean. Buccaneers were originally hunters living on the island of Hispaniola (modern-day Haiti and Dominican Republic) who cured meat over fires on wooden frames called boucans — hence the name. When Spanish authorities drove them from the island, they turned to raiding Spanish ships and ports as a form of revenge and survival.<br><br>
                 The buccaneers operated semi-legally, often with French or English backing. Their most famous leader was Henry Morgan, a Welsh privateer who carried out devastating raids on Spanish strongholds including Panama City in 1671 — the largest and wealthiest city in the Spanish Americas. Morgan was so politically connected that rather than being punished for his attacks (which occurred during peacetime), he was eventually knighted and appointed Lieutenant Governor of Jamaica.
             </p>
             <h4>Second Wave (1690s–1730): The Classic Pirate Era</h4>
             <p>
-                <img src="images/britains-piracy.jpg" alt="Britains representation of their pirate legacy" class="origin-imgs"></img><br>
+                <img src="images/britains-piracy.jpg" alt="Britains representation of their pirate legacy" class="origin-imgs" loading="lazy"></img><br>
                 The second wave emerged after the end of the War of the Spanish Succession (1714), which left thousands of experienced sailors suddenly unemployed. Many turned to piracy. This era produced the most famous pirates in history: Blackbeard, Bartholomew Roberts, Calico Jack, Anne Bonny, and Mary Read.<br><br>
                 Pirates of this era operated across an enormous range — from the Caribbean to the West African coast, across the Indian Ocean to Madagascar. The island of Madagascar, and particularly the settlement of Libertatia (whose actual existence is debated), became legendary as a pirate haven beyond the reach of any European power.<br><br>
                 The Golden Age ended when the world's naval powers — particularly Britain — made a coordinated effort to suppress piracy. Improved naval patrols, offers of amnesty, and brutal public executions (pirates were often hanged and their bodies displayed in iron cages called gibbets) gradually destroyed the pirate networks.<br><br>
             </p>
-        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Matos, Dominican Republic.
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
 </html>

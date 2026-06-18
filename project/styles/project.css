@@ -9,13 +9,12 @@ body {
     color: var(--main-color);
 }
 
-header {
-    width: 1100px;
-    margin: 0 auto;
+main {
+    padding-top: 0.65rem;
 }
 
-main, footer{
-    width: 1000px;
+main, footer {
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -24,7 +23,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem 1.2rem;
-    margin: 0 auto;
+    margin: 0;
+    color: var(--main-color);
+    border-bottom: 2px solid #191981;
+}
+
+footer {
+    padding: 1rem;
 }
 
 .hero-image {
@@ -44,6 +49,9 @@ ul {
 	font-weight: 700;
 }
 
+.navigation a:hover {
+    color: #fff;
+}
 h1, h2 {
     font-family: 'Bitter', 'Roboto Slab', 'Georgia', serif;
 }
@@ -51,30 +59,36 @@ h1, h2 {
 p {
     color: #000;
 }
-.wireframe img {
-    width: 450px;
-}
 
 .Container {
-    display: grid;
-    position: relative;
-    gap: 0.5rem;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 15px;
+    width: 100%;
 }
 
-.overlay-text {
-    display: inline-block;
-    position: absolute;
+.Container img {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 .origin-imgs {
-    width: 300px;
+    width: 200px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 .portrait-imgs {
     width: 175px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
+.pirates_img {
+    width: 75%;
+}
+
+.pirates-container img, p {
+    padding: 0.7rem;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
 header h1::after {
     content: "";
     display: inline-block;
@@ -86,7 +100,165 @@ header h1::after {
     background-size: contain;
 }
 
+table, th, td {
+    border: 1px solid;
+}
+
+td {
+    color: #000;
+}
+
+.ship-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ships_weapons_container {
+    width: 12.5rem;
+}
+
 .pirates-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+nav ul li:hover{
+    border-radius: 0.1rem;
+    outline: 0.3rem solid #8c8365;
+    background-color: #8c8365;
+}
+
+.my_clean_element {
+    all: unset;
+}
+
+.ShareContainer {
+    border-radius: 0.3rem;
+    background-color: #fff;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 0 5px #000;
+}
+
+.head {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.commentbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.commentbox > .profile_picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.user {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    color: #808080;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.commentInput > input {
+    padding: 10px;
+    padding-left: 0;
+    outline: none;
+    width: 95%;
+}
+
+button {
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.parents {
+    display: flex;
+    margin-bottom: 30px;
+}
+.parents p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    width: 100px;
+}
+
+.parents > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my_clean_element {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.userComment {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+@media (max-width: 544px){
+    #menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 0;
+	right: 0;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        border: 1px solid #000;
+        background-color: #fff;
+        border-radius: 0.4rem;
+        content: "❌";
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 700;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    .ShareContainer {
+        padding: 5px;
+        width: 100%;
+    }
+
+    ul {
+        display: block;
+    }
 }
